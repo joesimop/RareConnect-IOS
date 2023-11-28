@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftData
 
+
 @main
 struct IOSApplicationApp: App {
     var sharedModelContainer: ModelContainer = {

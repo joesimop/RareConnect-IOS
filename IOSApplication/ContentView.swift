@@ -8,11 +8,46 @@
 import SwiftUI
 import SwiftData
 
+struct UberData: Decodable{
+    let id: Int
+    let name: String
+}
+
+struct Thingy: UIViewControllerRepresentable{
+    func makeUIViewController(context: Context) -> UberTableView {
+        return UberTableView()
+    }
+    
+    func updateUIViewController(_ uiViewController: UberTableView, context: Context) {
+    }
+}
+
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
+    
+    
+    
+    //let apiCaller = APICaller<GetRequest<UberData>>()
 
     var body: some View {
+        
+        NavigationView{
+            NavigationLink{
+                Thingy()
+            } label: {
+                VStack {
+                        Image(systemName: "globe")
+                            .imageScale(.large)
+                     
+                            .foregroundColor(.accentColor)
+                Text("Hello, world!")
+                }
+                .padding()
+            }
+        }
+        
+        
         NavigationSplitView {
             List {
                 ForEach(items) { item in

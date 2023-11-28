@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "766C6432-8287-4E77-AB7C-E6ACCA049C16"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "97B466D8-21D4-4E86-983D-85F242EE8695"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSApplication/Views/UberTableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "UberTableView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "97B466D8-21D4-4E86-983D-85F242EE8695 - b6ae1aa138e0b4ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IOSApplication.UberTableView.VM.getter : IOSApplication.UberVM"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "97B466D8-21D4-4E86-983D-85F242EE8695 - f9c067e763e9ce09"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IOSApplication.UberTableView.VM.setter : IOSApplication.UberVM"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "97B466D8-21D4-4E86-983D-85F242EE8695 - cee293b9d996338"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IOSApplication.UberTableView.VM.modify : IOSApplication.UberVM"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "97B466D8-21D4-4E86-983D-85F242EE8695 - 123f660b618997a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IOSApplication.UberTableView.VM.modify : IOSApplication.UberVM with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "97B466D8-21D4-4E86-983D-85F242EE8695 - f359140be6228994"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IOSApplication.UberTableView.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; IOSApplication.UberTableView"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "97B466D8-21D4-4E86-983D-85F242EE8695 - 37c4cc4a4472079f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IOSApplication.UberTableView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;IOSApplication.UberTableView&gt;"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51C46CC7-6257-4C64-BB7D-03D50A54046C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSApplication/Views/UberTableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "UberTableView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC36F44D-C712-4A0E-ACD3-94C771825FA1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSApplication/Views/UberTableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B4532FA-2E9E-4C9E-A8C5-7899FE24E566"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSApplication/Views/UberTableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "UberTableView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3B4532FA-2E9E-4C9E-A8C5-7899FE24E566 - 1c7ca622bc48da05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IOSApplication.UberTableView.disposeBag.getter : RxSwift.DisposeBag"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "3B4532FA-2E9E-4C9E-A8C5-7899FE24E566 - f359140be62289f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IOSApplication.UberTableView.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; IOSApplication.UberTableView"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "3B4532FA-2E9E-4C9E-A8C5-7899FE24E566 - 37c4cc4a447207fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IOSApplication.UberTableView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;IOSApplication.UberTableView&gt;"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70AE7067-791B-471B-B7CF-48009A7BA92A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSApplication/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "Thingy"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20F59A79-8910-4BA4-BA4E-97F99EA972DD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSApplication/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "20F59A79-8910-4BA4-BA4E-97F99EA972DD - 169c167f9fc1fe18"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.NavigationLink&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, IOSApplication.Thingy&gt; in IOSApplication.ContentView.body.getter : some"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "20F59A79-8910-4BA4-BA4E-97F99EA972DD - 41232a649e759185"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; IOSApplication.Thingy in closure #1 () -&gt; SwiftUI.NavigationLink&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, IOSApplication.Thingy&gt; in IOSApplication.ContentView.body.getter : some"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
