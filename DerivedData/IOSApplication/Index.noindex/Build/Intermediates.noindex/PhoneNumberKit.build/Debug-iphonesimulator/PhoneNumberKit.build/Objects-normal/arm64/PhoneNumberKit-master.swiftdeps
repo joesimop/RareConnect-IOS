@@ -1,0 +1,43 @@
+version: "Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)"
+options: "9aa560834af6a7b787a3eacd797d53bcfdf281fe0a952f56c5f2a4f4aff7eeae"
+build_start_time: [1706989324, 335992000]
+build_end_time: [1706989324, 560906000]
+inputs:
+  ? "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/Build/Intermediates.noindex/PhoneNumberKit.build/Debug-iphonesimulator/PhoneNumberKit.build/DerivedSources/resource_bundle_accessor.swift"
+  : [1706989324, 329438000]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/Bundle+Resources.swift"
+  : [1706127417, 789975502]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/Constants.swift"
+  : [1706127417, 790107252]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/Formatter.swift"
+  : [1706127417, 790215543]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/MetadataManager.swift"
+  : [1706127417, 790358127]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/MetadataParsing.swift"
+  : [1706127417, 790471710]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/MetadataTypes.swift"
+  : [1706127417, 790582002]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/NSRegularExpression+Swift.swift"
+  : [1706127417, 790759002]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/ParseManager.swift"
+  : [1706127417, 790886002]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/PartialFormatter.swift"
+  : [1706127417, 790963502]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/PhoneNumber+Codable.swift"
+  : [1706127417, 791200836]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/PhoneNumber.swift"
+  : [1706127417, 791275127]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/PhoneNumberFormatter.swift"
+  : [1706127417, 791377919]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/PhoneNumberKit.swift"
+  : [1706127417, 791701961]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/PhoneNumberParser.swift"
+  : [1706127417, 791886711]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/RegexManager.swift"
+  : [1706127417, 792131045]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/UI/CountryCodePickerOptions.swift"
+  : [1706127417, 796457297]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/UI/CountryCodePickerViewController.swift"
+  : [1706127417, 796569005]
+  ? "/Users/joesimop/Library/Developer/Xcode/DerivedData/IOSApplication-boymqwydogthjncvzvxfhrcinojm/SourcePackages/checkouts/PhoneNumberKit/PhoneNumberKit/UI/PhoneNumberTextField.swift"
+  : [1706127417, 796671922]

@@ -7,90 +7,65 @@
 
 import SwiftUI
 import SwiftData
+import RxSwift
+import RxCocoa
 
-struct UberData: Decodable{
-    let id: Int
-    let name: String
-}
-
-struct Thingy: UIViewControllerRepresentable{
-    func makeUIViewController(context: Context) -> UberTableView {
-        return UberTableView()
-    }
-    
-    func updateUIViewController(_ uiViewController: UberTableView, context: Context) {
-    }
-}
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
     
+    @EnvironmentObject private var psCommonData : psCommonDataClass
+    @EnvironmentObject private var psUserData : psUserClass
+    @EnvironmentObject private var psCommunityData : psCommunityClass
+    @EnvironmentObject private var CommonVM : GeneralVM
     
-    
-    //let apiCaller = APICaller<GetRequest<UberData>>()
+    @State private var loginStatus : APIResponseCode = APIResponseCode.NotSent
+    @State private var doneDisplayingLogo : Bool = false
+    @State private var sidebarOpen : Bool = false
+    @StateObject var AuthVM: AuthorizationVM
 
+    init() {
+        self._AuthVM = StateObject(wrappedValue: AuthorizationVM())
+    }
+    
     var body: some View {
-        
-        NavigationView{
-            NavigationLink{
-                Thingy()
-            } label: {
-                VStack {
-                        Image(systemName: "globe")
-                            .imageScale(.large)
-                     
-                            .foregroundColor(.accentColor)
-                Text("Hello, world!")
-                }
-                .padding()
-            }
-        }
-        
-        
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        NavigationStack {
+            VStack {
+                if AuthVM.autoAuthorizationComplete && doneDisplayingLogo {
+                    if AuthVM.isAuthorized {
+                        PostLoginViewDecider(CommonVM: CommonVM, psUserData: psUserData, psCommunityData: psCommunityData)
+                    } else {
+                        LoginView(AuthVM: AuthVM)
+                            .transition(.opacity)
+                            .animation(.easeInOut(duration: 1.0),
+                                       value: AuthVM.autoAuthorizationComplete)
                     }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+                } else {
+                    LogoView()
+                        .onAppear{
+                            StartLogoViewTimer()
+                            self.AuthVM.OnViewOpen(CommonVM: CommonVM, psUserData: psUserData, psCommunityData: psCommunityData)
+                            SetupPersistentStorage()
+                            
+                        }
+                    HttpStatusView(statusCode: loginStatus).padding()
                 }
             }
-        } detail: {
-            Text("Select an item")
+        }.background(Color.background)
+    }
+    
+    func SetupPersistentStorage() {
+        CommonVM.GetAllCommunities()
+        { apiResult in
+            psCommonData.allCommunities = apiResult
         }
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
+    
+    func StartLogoViewTimer(){
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) {
+            timer in withAnimation {
+                doneDisplayingLogo = true
             }
         }
     }
-}
-
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+    
 }

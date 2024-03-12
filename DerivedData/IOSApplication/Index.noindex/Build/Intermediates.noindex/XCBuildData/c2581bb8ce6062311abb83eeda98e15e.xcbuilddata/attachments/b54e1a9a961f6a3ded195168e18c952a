@@ -1,0 +1,15 @@
+{
+  "" : {
+    "dependencies" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/Build/Intermediates.noindex/IOSApplication.build/Debug-iphoneos/IOSApplicationUITests.build/Objects-normal/arm64/IOSApplicationUITests-master.d",
+    "diagnostics" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/Build/Intermediates.noindex/IOSApplication.build/Debug-iphoneos/IOSApplicationUITests.build/Objects-normal/arm64/IOSApplicationUITests-master.dia",
+    "emit-module-dependencies" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/Build/Intermediates.noindex/IOSApplication.build/Debug-iphoneos/IOSApplicationUITests.build/Objects-normal/arm64/IOSApplicationUITests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/Build/Intermediates.noindex/IOSApplication.build/Debug-iphoneos/IOSApplicationUITests.build/Objects-normal/arm64/IOSApplicationUITests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/Build/Intermediates.noindex/IOSApplication.build/Debug-iphoneos/IOSApplicationUITests.build/Objects-normal/arm64/IOSApplicationUITests-master.swiftdeps"
+  },
+  "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/IOSApplicationUITests/IOSApplicationUITests.swift" : {
+
+  },
+  "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/IOSApplicationUITests/IOSApplicationUITestsLaunchTests.swift" : {
+
+  }
+}

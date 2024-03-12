@@ -1,0 +1,83 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "def3ee7128d3dab8acb8640c2a9ecf652c778c2ffafee0b5f5c8f8f9207c1fcb"
+    },
+    {
+      "guid" : "def3ee7128d3dab8acb8640c2a9ecf65714ed632e67417d643cfa9b02e30f931"
+    },
+    {
+      "guid" : "def3ee7128d3dab8acb8640c2a9ecf65218b7fbd451035d3774ce26719d872fa"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd424f96f1021f5250ab30d486e660411efe"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd420263e0200ac94856b68f2abe3cf16cf2"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd423d4a718ab8ceaf3ce1c45da7daf1ff85"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd420daa2e2cd26ad5ca345c3044f7db418b"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd42cf221279d79e8040ba890ad4d63bc194"
+    },
+    {
+      "guid" : "8699adb1dd336b26511df848a716bd4291ffb250f3b44ffb9b452226d52e9fa9"
+    }
+  ],
+  "containerPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/IOSApplication.xcworkspace",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator17.2",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/PrecompiledHeaders",
+      "indexRegularBuildIntermediatesPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Build/Intermediates.noindex",
+      "indexRegularBuildProductsPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Build/Products",
+      "pchPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

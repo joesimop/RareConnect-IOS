@@ -7,107 +7,77 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "97B466D8-21D4-4E86-983D-85F242EE8695"
+            uuid = "96A1C39C-9A0C-40D2-913E-841D8D3B4F26"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "IOSApplication/Views/UberTableView.swift"
+            filePath = "IOSApplication/ViewModels/CommunitySubpages/DonationVM.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "UberTableView"
-            landmarkType = "3">
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "GetPage()"
+            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "97B466D8-21D4-4E86-983D-85F242EE8695 - b6ae1aa138e0b4ea"
+                  uuid = "96A1C39C-9A0C-40D2-913E-841D8D3B4F26 - 205c9c83f202c223"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "IOSApplication.UberTableView.VM.getter : IOSApplication.UberVM"
+                  symbolName = "IOSApplication.DonationVM.GetPage() -&gt; ()"
                   moduleName = "IOSApplication"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/ViewModels/CommunitySubpages/DonationVM.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "100">
                </Location>
                <Location
-                  uuid = "97B466D8-21D4-4E86-983D-85F242EE8695 - f9c067e763e9ce09"
+                  uuid = "96A1C39C-9A0C-40D2-913E-841D8D3B4F26 - f01d51c8e3f80ae9"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "IOSApplication.UberTableView.VM.setter : IOSApplication.UberVM"
+                  symbolName = "closure #1 (Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;IOSApplication.DonationPage&gt;, IOSApplication.APIResponseCode.APIError&gt;) -&gt; () in IOSApplication.DonationVM.GetPage() -&gt; ()"
                   moduleName = "IOSApplication"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/ViewModels/CommunitySubpages/DonationVM.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "0">
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "120">
                </Location>
                <Location
-                  uuid = "97B466D8-21D4-4E86-983D-85F242EE8695 - cee293b9d996338"
+                  uuid = "96A1C39C-9A0C-40D2-913E-841D8D3B4F26 - 205c9c83f202c1c4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "IOSApplication.UberTableView.VM.modify : IOSApplication.UberVM"
+                  symbolName = "IOSApplication.DonationVM.GetPage() -&gt; ()"
                   moduleName = "IOSApplication"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/ViewModels/CommunitySubpages/DonationVM.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "0">
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "264">
                </Location>
                <Location
-                  uuid = "97B466D8-21D4-4E86-983D-85F242EE8695 - 123f660b618997a5"
+                  uuid = "96A1C39C-9A0C-40D2-913E-841D8D3B4F26 - f01d51c8e3f8090e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "IOSApplication.UberTableView.VM.modify : IOSApplication.UberVM with unmangled suffix &quot;.resume.0&quot;"
+                  symbolName = "closure #1 (Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;IOSApplication.DonationPage&gt;, IOSApplication.APIResponseCode.APIError&gt;) -&gt; () in IOSApplication.DonationVM.GetPage() -&gt; ()"
                   moduleName = "IOSApplication"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/%3Ccompiler-generated%3E"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/ViewModels/CommunitySubpages/DonationVM.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "97B466D8-21D4-4E86-983D-85F242EE8695 - f359140be6228994"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "IOSApplication.UberTableView.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; IOSApplication.UberTableView"
-                  moduleName = "IOSApplication"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "164">
-               </Location>
-               <Location
-                  uuid = "97B466D8-21D4-4E86-983D-85F242EE8695 - 37c4cc4a4472079f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "IOSApplication.UberTableView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;IOSApplication.UberTableView&gt;"
-                  moduleName = "IOSApplication"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "140">
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "120">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -115,94 +85,79 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "51C46CC7-6257-4C64-BB7D-03D50A54046C"
+            uuid = "04698536-A026-4A93-A857-EA3772BAFD20"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "IOSApplication/Views/UberTableView.swift"
+            filePath = "IOSApplication/ViewModels/ViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "UberTableView"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CC36F44D-C712-4A0E-ACD3-94C771825FA1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "IOSApplication/Views/UberTableView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "SetData(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3B4532FA-2E9E-4C9E-A8C5-7899FE24E566"
+            uuid = "37AD4871-FCA9-42D6-B1C8-931E96521AA0"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "IOSApplication/Views/UberTableView.swift"
+            filePath = "IOSApplication/ViewModels/CommunitySubpages/DonationVM.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "UberTableView"
-            landmarkType = "3">
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "GetPage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "202220F4-90BB-4D10-8EE9-11BBAADE88C3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSApplication/ViewModels/APIDispatcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "SendRequestViewUpdate(_:resultHandler:)"
+            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "3B4532FA-2E9E-4C9E-A8C5-7899FE24E566 - 1c7ca622bc48da05"
+                  uuid = "202220F4-90BB-4D10-8EE9-11BBAADE88C3 - dd3a1f486ef6c011"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "IOSApplication.UberTableView.disposeBag.getter : RxSwift.DisposeBag"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;&#x3c4;_0_0&gt;, IOSApplication.APIResponseCode.APIError&gt;) -&gt; () in IOSApplication.ViewModelAPIDispatcher.SendRequestViewUpdate&lt;&#x3c4;_0_0&gt;(_: IOSApplication.APIRequest&lt;&#x3c4;_0_0&gt;, resultHandler: (Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;&#x3c4;_0_0&gt;, IOSApplication.APIResponseCode.APIError&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "IOSApplication"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/ViewModels/APIDispatcher.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "80">
                </Location>
                <Location
-                  uuid = "3B4532FA-2E9E-4C9E-A8C5-7899FE24E566 - f359140be62289f7"
+                  uuid = "202220F4-90BB-4D10-8EE9-11BBAADE88C3 - dd3a1f486ef6c076"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "IOSApplication.UberTableView.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; IOSApplication.UberTableView"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;&#x3c4;_0_0&gt;, IOSApplication.APIResponseCode.APIError&gt;) -&gt; () in IOSApplication.ViewModelAPIDispatcher.SendRequestViewUpdate&lt;&#x3c4;_0_0&gt;(_: IOSApplication.APIRequest&lt;&#x3c4;_0_0&gt;, resultHandler: (Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;&#x3c4;_0_0&gt;, IOSApplication.APIResponseCode.APIError&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "IOSApplication"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/ViewModels/APIDispatcher.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "3B4532FA-2E9E-4C9E-A8C5-7899FE24E566 - 37c4cc4a447207fc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "IOSApplication.UberTableView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;IOSApplication.UberTableView&gt;"
-                  moduleName = "IOSApplication"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Views/UberTableView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "68">
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "80">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -210,63 +165,285 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "70AE7067-791B-471B-B7CF-48009A7BA92A"
-            shouldBeEnabled = "Yes"
+            uuid = "E900E9C9-07F3-45DB-AFB2-7E3FDB0ABA46"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "IOSApplication/ContentView.swift"
+            filePath = "IOSApplication/ViewModels/APIDispatcher.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "Thingy"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "SendRequest(_:resultHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E900E9C9-07F3-45DB-AFB2-7E3FDB0ABA46 - 53d5699abf0166b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;&#x3c4;_0_0&gt;, IOSApplication.APIResponseCode.APIError&gt;) -&gt; () in IOSApplication.ViewModelAPIDispatcher.SendRequest&lt;&#x3c4;_0_0&gt;(_: IOSApplication.APIRequest&lt;&#x3c4;_0_0&gt;, resultHandler: (Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;&#x3c4;_0_0&gt;, IOSApplication.APIResponseCode.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/ViewModels/APIDispatcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "E900E9C9-07F3-45DB-AFB2-7E3FDB0ABA46 - 53d5699abf016694"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;&#x3c4;_0_0&gt;, IOSApplication.APIResponseCode.APIError&gt;) -&gt; () in IOSApplication.ViewModelAPIDispatcher.SendRequest&lt;&#x3c4;_0_0&gt;(_: IOSApplication.APIRequest&lt;&#x3c4;_0_0&gt;, resultHandler: (Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;&#x3c4;_0_0&gt;, IOSApplication.APIResponseCode.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/ViewModels/APIDispatcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A357F7C-1DD4-47D2-ACE2-AC52C22690FD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSApplication/Utilities/API/APICaller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "sendSingleRequestRxWithIdentifier(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8A357F7C-1DD4-47D2-ACE2-AC52C22690FD - 6d036cab795555a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IOSApplication.APICaller.sendSingleRequestRxWithIdentifier&lt;&#x3c4;_0_0&gt;(IOSApplication.ConcurrentAPIRequest&lt;&#x3c4;_0_0&gt;) -&gt; RxSwift.Observable&lt;Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;&#x3c4;_0_0&gt;, IOSApplication.APIResponseCode.APIError&gt;&gt;"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Utilities/API/APICaller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1140">
+               </Location>
+               <Location
+                  uuid = "8A357F7C-1DD4-47D2-ACE2-AC52C22690FD - 77e45adce1f76930"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (&#x3c4;_0_0) -&gt; Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;&#x3c4;_0_0&gt;, IOSApplication.APIResponseCode.APIError&gt; in IOSApplication.APICaller.sendSingleRequestRxWithIdentifier&lt;&#x3c4;_0_0&gt;(IOSApplication.ConcurrentAPIRequest&lt;&#x3c4;_0_0&gt;) -&gt; RxSwift.Observable&lt;Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;&#x3c4;_0_0&gt;, IOSApplication.APIResponseCode.APIError&gt;&gt;"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Utilities/API/APICaller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "8A357F7C-1DD4-47D2-ACE2-AC52C22690FD - 6d036cab79555642"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IOSApplication.APICaller.sendSingleRequestRxWithIdentifier&lt;&#x3c4;_0_0&gt;(IOSApplication.ConcurrentAPIRequest&lt;&#x3c4;_0_0&gt;) -&gt; RxSwift.Observable&lt;Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;&#x3c4;_0_0&gt;, IOSApplication.APIResponseCode.APIError&gt;&gt;"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Utilities/API/APICaller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1032">
+               </Location>
+               <Location
+                  uuid = "8A357F7C-1DD4-47D2-ACE2-AC52C22690FD - 5d908c540f4ec0d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (&#x3c4;_0_0) -&gt; Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;&#x3c4;_0_0&gt;, IOSApplication.APIResponseCode.APIError&gt; in IOSApplication.APICaller.sendSingleRequestRxWithIdentifier&lt;&#x3c4;_0_0&gt;(IOSApplication.ConcurrentAPIRequest&lt;&#x3c4;_0_0&gt;) -&gt; RxSwift.Observable&lt;Swift.Result&lt;IOSApplication.APIResultWithRequestIdentifier&lt;&#x3c4;_0_0&gt;, IOSApplication.APIResponseCode.APIError&gt;&gt;"
+                  moduleName = "IOSApplication"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/Utilities/API/APICaller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6009FC54-BAD5-4D62-A7C8-BF04C2188E98"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSApplication/UIElements/GeneralViews/rcDropdown.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "rcDropdown"
             landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "20F59A79-8910-4BA4-BA4E-97F99EA972DD"
-            shouldBeEnabled = "Yes"
+            uuid = "53EE749D-95D4-46B1-8944-675E13F29E85"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "IOSApplication/ContentView.swift"
+            filePath = "IOSApplication/UIElements/GeneralViews/rcDatabaseSearch.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "body"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "988D8CD6-8460-43A4-A836-9017B171B4DB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSApplication/ViewModels/SearchVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "bindTo(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BE63334-93D2-49B2-A1E0-8C98BD595FCE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSApplication/ViewModels/SearchVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "bindTo(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68A16FBC-7438-486B-B859-8F93A1E70405"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSApplication/ViewModels/SearchVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "bindTo(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D440CCBA-2E3B-4D7E-9166-56078B485E45"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSApplication/ViewModels/SearchVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "search(newQuery:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B86199FF-F868-4B04-8069-D57378A46AB4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSApplication/UIElements/GeneralViews/rcDatabaseSearch.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D59193D6-145C-4F3A-8652-8E372D851E9C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOSApplication/ViewModels/CommunitySubpages/CommunityBoardVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "init(community_id:profile_id:)"
+            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "20F59A79-8910-4BA4-BA4E-97F99EA972DD - 169c167f9fc1fe18"
+                  uuid = "D59193D6-145C-4F3A-8652-8E372D851E9C - 5c0824b4b606ef7a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.NavigationLink&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, IOSApplication.Thingy&gt; in IOSApplication.ContentView.body.getter : some"
+                  symbolName = "IOSApplication.CommunityBoardVM.init(community_id: Swift.Int, profile_id: Swift.Int) -&gt; IOSApplication.CommunityBoardVM"
                   moduleName = "IOSApplication"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/ContentView.swift"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/ViewModels/CommunitySubpages/CommunityBoardVM.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "132">
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "720">
                </Location>
                <Location
-                  uuid = "20F59A79-8910-4BA4-BA4E-97F99EA972DD - 41232a649e759185"
+                  uuid = "D59193D6-145C-4F3A-8652-8E372D851E9C - 5c0824b4b606ef7a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; IOSApplication.Thingy in closure #1 () -&gt; SwiftUI.NavigationLink&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, IOSApplication.Thingy&gt; in IOSApplication.ContentView.body.getter : some"
+                  symbolName = "IOSApplication.CommunityBoardVM.init(community_id: Swift.Int, profile_id: Swift.Int) -&gt; IOSApplication.CommunityBoardVM"
                   moduleName = "IOSApplication"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/ContentView.swift"
+                  urlString = "file:///Users/joesimop/Desktop/Classes/Senior%20Project/IOSApplication/IOSApplication/ViewModels/CommunitySubpages/CommunityBoardVM.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "36">
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "752">
                </Location>
             </Locations>
          </BreakpointContent>

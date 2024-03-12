@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/IOSApplication/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameAccent</string>
+			<key>relativePath</key>
+			<string>./Colors/Accent.colorset</string>
+			<key>swiftSymbol</key>
+			<string>accent</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/IOSApplication/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameBackground</string>
+			<key>relativePath</key>
+			<string>./Colors/Background.colorset</string>
+			<key>swiftSymbol</key>
+			<string>background</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/IOSApplication/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameError</string>
+			<key>relativePath</key>
+			<string>./Colors/Error.colorset</string>
+			<key>swiftSymbol</key>
+			<string>error</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/IOSApplication/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameGrey</string>
+			<key>relativePath</key>
+			<string>./Colors/Grey.colorset</string>
+			<key>swiftSymbol</key>
+			<string>grey</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/IOSApplication/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNamePrimary1</string>
+			<key>relativePath</key>
+			<string>./Colors/Primary1.colorset</string>
+			<key>swiftSymbol</key>
+			<string>primary1</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/IOSApplication/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameSuccess</string>
+			<key>relativePath</key>
+			<string>./Colors/Success.colorset</string>
+			<key>swiftSymbol</key>
+			<string>success</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/IOSApplication/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameTextPrimary</string>
+			<key>relativePath</key>
+			<string>./Colors/TextPrimary.colorset</string>
+			<key>swiftSymbol</key>
+			<string>textPrimary</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/IOSApplication/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameTextSecondary</string>
+			<key>relativePath</key>
+			<string>./Colors/TextSecondary.colorset</string>
+			<key>swiftSymbol</key>
+			<string>textSecondary</string>
+		</dict>
+	</array>
+	<key>images</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/IOSApplication/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameDna1</string>
+			<key>relativePath</key>
+			<string>./dna_1.imageset</string>
+			<key>swiftSymbol</key>
+			<string>dna1</string>
+		</dict>
+	</array>
+	<key>symbols</key>
+	<array/>
+</dict>
+</plist>

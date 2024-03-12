@@ -1,0 +1,52 @@
+//
+//  ApplicationState.swift
+//  IOSApplication
+//
+//  Created by Joseph Simopoulos on 1/22/24.
+//
+
+import Foundation
+
+//ps stands for "Persitent Storage"
+
+
+///Common data regardless of community or profile
+class psCommonDataClass : ObservableObject {
+    var allCommunities : [Community] = []
+}
+
+///Data that persists about the selected community throughtout the session of the app.
+class psCommunityClass : ObservableObject {
+    var id : Int = 0
+    var name : String  = ""
+    var role : eRole = eRole.NoCredentials
+    
+    func SetCommunity(community: AbbrCommunity){
+        self.id = community.id
+        self.name = community.name
+        self.role = community.role
+    }
+    
+    func AsAbbrCommunity() -> AbbrCommunity {
+        return AbbrCommunity(id: self.id, name: self.name, role: self.role)
+    }
+}
+
+///Data that persists about the user throughout the session of the app
+class psUserClass : ObservableObject {
+    
+    //Initial values for on app startup
+    var id : Int = 0
+    var firstname : String = ""
+    var lastname : String = ""
+    var username : String = ""
+    var profileCommunities : [AbbrCommunity] = []
+    
+    ///Sets the profile of the persistent data, given a UserProfile
+    func SetProfile(profile : UserProfile){
+        self.id = profile.id
+        self.firstname = profile.firstname
+        self.lastname = profile.lastname
+        self.username = profile.username
+    }
+}

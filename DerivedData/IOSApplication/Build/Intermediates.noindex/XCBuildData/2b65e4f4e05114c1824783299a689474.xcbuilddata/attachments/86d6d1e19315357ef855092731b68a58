@@ -1,0 +1,5 @@
+ extern const unsigned char Pods_IOSApplicationVersionString[];
+ extern const double Pods_IOSApplicationVersionNumber;
+
+ const unsigned char Pods_IOSApplicationVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_IOSApplication  PROJECT:Pods-1" "\n";
+ const double Pods_IOSApplicationVersionNumber __attribute__ ((used)) = (double)1.;

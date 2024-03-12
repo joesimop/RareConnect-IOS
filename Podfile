@@ -8,6 +8,7 @@ target 'IOSApplication' do
   # Pods for IOSApplication
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'AwesomeEnum'
 
   target 'IOSApplicationTests' do
     inherit! :search_paths

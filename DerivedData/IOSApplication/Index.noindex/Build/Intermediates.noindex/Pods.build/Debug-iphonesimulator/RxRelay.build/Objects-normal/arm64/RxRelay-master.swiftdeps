@@ -1,0 +1,10 @@
+version: "Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)"
+options: "37282f660efcb83e375be46209955107b0f55f2411ff278cac26bf045b77fe60"
+build_start_time: [1706989324, 709965000]
+build_end_time: [1706989324, 856637000]
+inputs:
+  "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/Pods/RxRelay/RxRelay/BehaviorRelay.swift": [1699140373, 725744815]
+  "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/Pods/RxRelay/RxRelay/Observable+Bind.swift": [1699140373, 725517022]
+  "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/Pods/RxRelay/RxRelay/PublishRelay.swift": [1699140373, 725244103]
+  "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/Pods/RxRelay/RxRelay/ReplayRelay.swift": [1699140373, 725355312]
+  "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/Pods/RxRelay/RxRelay/Utils.swift": [1699140373, 725634689]

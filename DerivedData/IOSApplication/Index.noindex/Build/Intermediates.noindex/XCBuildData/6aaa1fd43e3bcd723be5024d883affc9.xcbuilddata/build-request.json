@@ -1,0 +1,59 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "def3ee7128d3dab8acb8640c2a9ecf652c778c2ffafee0b5f5c8f8f9207c1fcb"
+    }
+  ],
+  "containerPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/IOSApplication.xcworkspace",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator17.2",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/PrecompiledHeaders",
+      "indexRegularBuildIntermediatesPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Build/Intermediates.noindex",
+      "indexRegularBuildProductsPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Build/Products",
+      "pchPath" : "/Users/joesimop/Desktop/Classes/Senior Project/IOSApplication/DerivedData/IOSApplication/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
