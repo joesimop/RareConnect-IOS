@@ -7,7 +7,7 @@ target 'IOSApplication' do
 
   # Pods for IOSApplication
   pod 'RxSwift'
-  pod 'RxCocoa'
+  pod 'RxCocoa', '~> 6.6'
   pod 'AwesomeEnum'
 
   target 'IOSApplicationTests' do

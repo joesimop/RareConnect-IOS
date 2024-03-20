@@ -7,6 +7,16 @@
 
 import Foundation
 
+struct SearchField : Hashable {
+    
+    static func == (lhs: SearchField, rhs: SearchField) -> Bool {
+        return lhs.databaseName == rhs.databaseName
+    }
+    
+    let databaseName: String
+    let displayName: String
+}
+
 /* Custom struct to quickly make api calls depending on an input string
    The struct assumes that the returned value will be in a list, as that is the essence of a search
    We will only allow one search value but it can be used to search multiple fields */
@@ -15,11 +25,13 @@ class SearchAPIRequest<Result> where Result : Decodable {
     var queryFields: [URLQueryItem]
     var handleResponse: (Data) throws -> Result
     var currentSearch: String
+    var searchableFields: [SearchField]
     let baseUrl: String = "http://127.0.0.1:8000"
     
-    init(endpoint: String, searchableFields: [String]) {
+    init(endpoint: String, searchableFields: [SearchField]) {
         
         self.urlComponents = URLComponents(string: baseUrl)!
+        self.searchableFields = searchableFields
         self.urlComponents.path = endpoint
         self.currentSearch = ""
         self.queryFields = []
@@ -27,7 +39,7 @@ class SearchAPIRequest<Result> where Result : Decodable {
         //Initialize search query for each parameter to be an empty string
         //By default we are searching all fields
         for field in searchableFields {
-            queryFields.append(URLQueryItem(name: field, value: self.currentSearch))
+            queryFields.append(URLQueryItem(name: field.databaseName, value: self.currentSearch))
         }
         self.urlComponents.queryItems = self.queryFields
 
@@ -67,6 +79,7 @@ extension SearchAPIRequest where Result : Decodable {
             self.urlComponents.queryItems = []
             
         } else {
+            
             //Update each query item
             for index in 0..<self.queryFields.count {
                 self.queryFields[index].value = newQuery
