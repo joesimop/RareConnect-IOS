@@ -15,7 +15,10 @@ struct ListItem<Content: View>: View {
     var body: some View {
         content()
             .padding(10)
-            .cornerRadius(8)
+            .overlay(
+                RoundedRectangle(cornerRadius: 10) // Match corner radius with the view
+                    .stroke(Color.black, lineWidth: 2) // Apply stroke as border
+             )
             .foregroundColor(.black)
             .background(Color.white)
     }
@@ -30,10 +33,10 @@ struct rcListView<V : View, T : Hashable>: View {
     var body : some View {
         
         ScrollView{
-            LazyVStack(alignment: .leading){
+            LazyVStack(alignment: .leading, spacing: 15.0){
                 ForEach(data, id: \.self) { item in
                     ListItem { ImplementedListItem(item) }
-                        .cornerRadius(8)
+                        
                 }
             }.padding()
         }

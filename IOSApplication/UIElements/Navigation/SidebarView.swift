@@ -7,6 +7,21 @@
 
 import SwiftUI
 
+
+extension View {
+    func animate(duration: CGFloat, _ execute: @escaping () -> Void) async {
+        await withCheckedContinuation { continuation in
+            withAnimation(.linear(duration: duration)) {
+                execute()
+            }
+
+            DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
+                continuation.resume()
+            }
+        }
+    }
+}
+
 ///Contains information necessary to compose a sidebar item, including which page to open on click
 struct SidebarItem: Identifiable {
     static func == (lhs: SidebarItem, rhs: SidebarItem) -> Bool {
@@ -16,7 +31,7 @@ struct SidebarItem: Identifiable {
     var id = UUID()
     var name: String
     var image: String
-    var content: any View
+    var view: any View
 }
 
 ///A list of the sidebar items, with the info necessary to persist user instance
@@ -32,15 +47,15 @@ struct SidebarItems {
         
         //All items that are located in the sidebar
         self.items = [
-            SidebarItem(name: "Home", image: "Home", content: HomeView(community_id: community.id)),
-            SidebarItem(name: "About", image: "Home", content: HomeView(community_id: community.id)),
-            SidebarItem(name: "Guidelines", image: "", content: CommunityGuidelinesView(community: community, profile_id: user.id)),
-            SidebarItem(name: "Community Updates", image: "", content: HomeView(community: community)),
-            SidebarItem(name: "Events", image: "", content: HomeView(community: community)),
-            SidebarItem(name: "People", image: "", content: PeopleView(community: community)),
-            SidebarItem(name: "Donation", image: "", content: DonationView(community_id: community.id, profile_id: user.id, role: community.role)),
-            SidebarItem(name: "Community Board", image: "", content: CommunityBoardView(user: user, psCommunityData: community)),
-            SidebarItem(name: "FAQ", image: "", content: FAQView(community: community, profile_id: user.id))
+            SidebarItem(name: "Home", image: "Home", view: HomeView(community_id: community.id)),
+            SidebarItem(name: "About", image: "Home", view: HomeView(community_id: community.id)),
+            SidebarItem(name: "Guidelines", image: "", view: CommunityGuidelinesView(community: community, profile_id: user.id)),
+            SidebarItem(name: "Community Updates", image: "", view: CommunityUpdatesView(user: user, psCommunityData: community)),
+            SidebarItem(name: "Events", image: "", view: HomeView(community: community)),
+            SidebarItem(name: "People", image: "", view: PeopleView(community: community)),
+            SidebarItem(name: "Donation", image: "", view: DonationView(community_id: community.id, profile_id: user.id, role: community.role)),
+            SidebarItem(name: "Community Board", image: "", view: CommunityBoardView(user: user, psCommunityData: community)),
+            SidebarItem(name: "FAQ", image: "", view: FAQView(community: community, profile_id: user.id))
         ]
     }
 }
@@ -122,18 +137,16 @@ struct SidebarView: View {
                     
                     ///AnyView is not ideal, but need it as a layer of abstraction if we just want
                     ///to keep a list of SidebarItem that automatically populates
-                    AnyView(selectedItem.content)
+                    AnyView(selectedItem.view)
                     
                     ///Commonalities between all pages that are shared
                         .navigationBarTitleDisplayMode(.inline)
                         .navigationTitle(selectedItem.name)
-                        .transition(.move(edge: .trailing))
+                        .transition(AnyTransition.move(edge: .trailing).animation(.smooth))
                         .toolbar {
                             ToolbarItem(placement: .navigationBarLeading) {
                                 Button() {
-                                    withAnimation {
                                         sidebarOpen.toggle()
-                                    }
                                 } label: {
                                     Text("Menu")
                                 }
@@ -147,13 +160,11 @@ struct SidebarView: View {
             
             ///Display Sidebar if it is toggled to open
             else {
-                SideBar.transition(.move(edge: .leading))
-                    .navigationBarTitleDisplayMode(.inline)
+                SideBar
+                    .transition(AnyTransition.move(edge: .leading).animation(.easeIn))
+                    .navigationBarTitleDisplayMode(.large)
                     .navigationTitle("Menu")
             }
-            
-        }
-        .animation(.easeInOut, value: sidebarOpen)
-        
+        }.animation(.smooth, value: sidebarOpen)
     }
 }

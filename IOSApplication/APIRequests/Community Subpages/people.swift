@@ -16,7 +16,12 @@ extension SearchAPIRequest where Result == [AbbrProfile] {
     ///     - community_id: Community Identifier
     /// - Returns: APIRequest<[AbbrProfile]>
     static func searchProfiles(community_id: Int) -> SearchAPIRequest {
-        return SearchAPIRequest(endpoint: "/communities/\(community_id)/people/search", searchableFields: ["firstname", "lastname", "username"])
+        return SearchAPIRequest(endpoint: "/communities/\(community_id)/people/search",
+                                searchableFields: [
+                                    SearchField(databaseName: "firstname",   displayName: "First Name"),
+                                    SearchField(databaseName: "lastname",    displayName: "Last Name"),
+                                    SearchField(databaseName: "username",    displayName: "Username")
+                                ])
     }
     
 }

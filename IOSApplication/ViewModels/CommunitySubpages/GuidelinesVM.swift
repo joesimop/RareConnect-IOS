@@ -14,7 +14,7 @@ class GuidelinesVM : ViewModel {
     var community_id: Int           //Current session's community identifier
     var profile_id: Int             //Current session's profile identifier
     
-    ///Pulled guidlines from database
+    ///Pulled guidwlines from database
     @Published var guidelines: ViewResult<[Guideline]> = ViewResult(defaultValue: [])
     
     ///API Dispatcher

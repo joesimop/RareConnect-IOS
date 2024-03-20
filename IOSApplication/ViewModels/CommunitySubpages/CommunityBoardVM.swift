@@ -19,14 +19,9 @@ class CommunityBoardVM : ViewModel {
     @Published var commentSection: ViewResult<[Comment]> = ViewResult(defaultValue: [])
     private var dispatcher : ViewModelAPIDispatcher = ViewModelAPIDispatcher()
     
-    init(){
-        self.posts = ViewResult(defaultValue: [])
-    }
-    
     init(community_id: Int, profile_id: Int){
         self.community_id = community_id
         self.profile_id = profile_id
-        self.posts = ViewResult(defaultValue: [])
         self.OnViewOpen()
     }
     

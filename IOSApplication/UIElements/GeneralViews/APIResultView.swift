@@ -17,13 +17,9 @@ struct APIResultView<Content : View, T>: View {
         var body: some View {
             switch apiResult.state{
             case .object:
-                withAnimation{
-                    successDisplay(apiResult.data!)
-                }
+                successDisplay(apiResult.data!)
             case .loading:
-                withAnimation{
-                    ProgressView("Loading...")
-                }
+                ProgressView("Loading...")
                
             case .code(let code):
                 HttpStatusView(statusCode: code)

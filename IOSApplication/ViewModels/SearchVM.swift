@@ -16,7 +16,7 @@ import RxRelay
 class SearchViewModel<T> where T : Decodable {
     
     
-    private let request: SearchAPIRequest<[T]>                                 //Request that will be sent
+    let request: SearchAPIRequest<[T]>                                 //Request that will be sent
     private let searchTextSubject = PublishSubject<SearchAPIRequest<[T]>>()     //Observable that emits currently typed text
     private let bag = DisposeBag()                                           //Bag for cleanup
 

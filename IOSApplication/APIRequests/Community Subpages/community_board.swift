@@ -144,7 +144,11 @@ extension SearchAPIRequest where Result == [CommunityBoardPostAbbr] {
     ///     - community_id: Community Identifier
     /// - Returns: APIRequest<[CommunityBoardPostAbbr]>
     static func searchCommunityBoard(community_id: Int) -> SearchAPIRequest {
-        return SearchAPIRequest(endpoint: "/communities/\(community_id)/board/search", searchableFields: ["username", "body"])
+        return SearchAPIRequest(endpoint: "/communities/\(community_id)/board/search", 
+                                searchableFields: [
+                                    SearchField(databaseName: "username", displayName: "Username"),
+                                    SearchField(databaseName: "body",    displayName: "Post")
+                                ])
     }
     
 }

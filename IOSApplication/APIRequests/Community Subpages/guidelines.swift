@@ -12,7 +12,7 @@ extension APIRequest where Result == [Guideline] {
     ///Creates an usable APIRequest that gets  guidelines for a given community.
     /// - Parameters:
     ///     - community_id: Which community guidlines we are reordering
-    /// - Returns: APIRequest<[Guideline>
+    /// - Returns: APIRequest<[Guideline]>
     static func getCommunityGuidlines(community_id : Int) -> APIRequest {
         return APIRequest(endpoint: "/communities/\(community_id)/guidelines/all", decoder: JSONDecoder())
     }

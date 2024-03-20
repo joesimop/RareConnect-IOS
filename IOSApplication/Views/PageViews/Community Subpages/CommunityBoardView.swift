@@ -12,8 +12,6 @@ struct CommunityBoardView: View {
     var user: psUserClass
     var community : psCommunityClass
     
-    @State var posts : [CommunityBoardPost] = []
-    @State var pinnedPosts: [CommunityBoardPost] = []
     @State var showCommentSection: Bool = false
     @State private var commentSectionId: Int = -1
     @State private var isSearching: Bool = false
@@ -23,7 +21,6 @@ struct CommunityBoardView: View {
     init(user: psUserClass, psCommunityData: psCommunityClass) {
         self.user = user
         self.community = psCommunityData
-        self.posts = []
         self._VM = StateObject(wrappedValue: CommunityBoardVM(community_id: psCommunityData.id, profile_id: user.id))
     }
     

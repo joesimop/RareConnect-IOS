@@ -152,7 +152,7 @@ class AuthorizationVM: ViewModel {
     static func CheckForUserCredentials() -> (String, String)?{
         
         
-        return nil
+        //return nil
         ///Check if we have stored credentials
         if let storedUsername = self.getUserDefault(){
             let storedPassword = self.retrievePassword(username: storedUsername)

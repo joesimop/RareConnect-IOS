@@ -27,8 +27,12 @@ enum ViewResultState{
 }
 
 ///Struct that holds API call state and its associated data that can be used in a View.
-struct ViewResult<T> {
+struct ViewResult<T> : Equatable {
+    static func == (lhs: ViewResult<T>, rhs: ViewResult<T>) -> Bool {
+        return lhs.identifier == rhs.identifier
+    }
     
+    private var identifier = UUID()
     var data: T?
     var state: ViewResultState = .loading
     var defaultValue: T?
@@ -63,7 +67,6 @@ struct ViewResult<T> {
     ///If it was unsuccessful, it sets error code and sets the ViewResult State to code.
     mutating func SetData(_ result: APIResult<T>) -> Void {
         switch result {
-        
             case .success(let data):
                 self.data = data.data
                 self.state = .object

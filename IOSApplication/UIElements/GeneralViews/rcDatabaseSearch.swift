@@ -29,16 +29,29 @@ struct rcDatabaseSearch<T : Decodable & Hashable, itemView: View>: View {
     var body: some View {
         
         //Display the items
-        VStack{
+        VStack(spacing: 0){
+            HStack(spacing: HSTACK_SPACING){
+                rcText("Search In:").bold()
+                rcHorizontalScrollView(data: VM.request.searchableFields, spacing: 8, showScrollbar: false) { field in
+                    SearchParameterSelectView(searchParameter: field.displayName){ isSelected in
+                        if isSelected {
+                            VM.request.addSearchField(newParameter: field.databaseName)
+                        } else {
+                            VM.request.removeSearchField(field: field.databaseName)
+                        }
+                    }
+                }
+            }.padding(.horizontal)
+            
             rcListView(data: results) { result in
                 content(result)
-            }
+            }.searchable(text: $searchText,/* isPresented: $isSearching,*/ placement: .navigationBarDrawer(displayMode: .always), prompt: searchPrompt)
+                .onChange(of: searchText){oldInput, newInput in
+                    //Query Backend
+                    VM.search(newQuery: newInput)
+                }
         }
-        .searchable(text: $searchText,/* isPresented: $isSearching,*/ placement: .navigationBarDrawer(displayMode: .always), prompt: searchPrompt)
-        .onChange(of: searchText){oldInput, newInput in
-            //Query Backend
-            VM.search(newQuery: newInput)
-        }.onAppear{
+        .onAppear{
             //If we have results cached already,
             //we do not want to bind to the VM again or send another request.
             if(results.isEmpty) {
@@ -46,5 +59,6 @@ struct rcDatabaseSearch<T : Decodable & Hashable, itemView: View>: View {
                 self.VM.search(newQuery: searchText)     // Query backend
             }
         }
+        
     }
 }

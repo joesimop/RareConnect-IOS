@@ -76,5 +76,4 @@ class FaqVM : ViewModel {
             }
         }
     }
-    
 }

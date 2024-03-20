@@ -9,7 +9,7 @@ PODS:
 
 DEPENDENCIES:
   - AwesomeEnum
-  - RxCocoa
+  - RxCocoa (~> 6.6)
   - RxSwift
 
 SPEC REPOS:
@@ -25,6 +25,6 @@ SPEC CHECKSUMS:
   RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
   RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
 
-PODFILE CHECKSUM: 701ba397f780a5d4116fa56e232ab3d67728b42f
+PODFILE CHECKSUM: f097d5c31ae6dd9f7d288c36e38461b470ad07ae
 
 COCOAPODS: 1.14.2
