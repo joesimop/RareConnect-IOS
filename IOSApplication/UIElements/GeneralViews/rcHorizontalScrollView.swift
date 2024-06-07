@@ -31,6 +31,6 @@ struct rcHorizontalScrollView<Item : View, T : Hashable>: View {
                     itemView(item)
                 }
             }
-        }
+        }.horizontalFadeout()
     }
 }

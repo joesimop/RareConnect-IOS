@@ -9,12 +9,11 @@ import SwiftUI
 
 struct CommunitySelectView: View {
     
-    @EnvironmentObject var psUserData : psUserClass
-    @EnvironmentObject var psCommunityData : psCommunityClass
+    @EnvironmentObject var AppState : AppStateClass
     
     var body: some View {
-        rcListView(data: psUserData.profileCommunities) { community in
-            NavigationLink(destination: SidebarView(psCommunityData: community, user: psUserData).navigationBarBackButtonHidden())
+        rcListView(data: AppState.user.profileCommunities) { community in
+            NavigationLink(destination: SidebarView(psCommunityData: community, user: AppState.user).navigationBarBackButtonHidden())
             {
                 HStack {
                     VStack(alignment: .leading) {
@@ -31,7 +30,7 @@ struct CommunitySelectView: View {
                         .foregroundColor(.textPrimary)
                    }
                 }.simultaneousGesture(TapGesture().onEnded{
-                    psCommunityData.SetCommunity(community: community)
+                    AppState.SetCommunity(newCommunity: community)
                 })
             }
         }

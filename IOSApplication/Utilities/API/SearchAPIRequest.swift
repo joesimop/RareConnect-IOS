@@ -17,6 +17,20 @@ struct SearchField : Hashable {
     let displayName: String
 }
 
+enum SortOptions : String, RawRepresentable, CaseIterable {
+    case Date = "timestamp"
+    case Upvotes = "upvotes"
+    case Title = "title"
+    case Firstname = "firstname"
+    case Username = "username"
+    case Pinned = "pinned"
+}
+
+enum SortDirection : String, RawRepresentable, CaseIterable {
+    case Ascending = "ASC"
+    case Descending = "DESC"
+}
+
 /* Custom struct to quickly make api calls depending on an input string
    The struct assumes that the returned value will be in a list, as that is the essence of a search
    We will only allow one search value but it can be used to search multiple fields */
@@ -26,23 +40,34 @@ class SearchAPIRequest<Result> where Result : Decodable {
     var handleResponse: (Data) throws -> Result
     var currentSearch: String
     var searchableFields: [SearchField]
+    var sortBy: SortOptions
+    var sortDirection: SortDirection
     let baseUrl: String = "http://127.0.0.1:8000"
     
-    init(endpoint: String, searchableFields: [SearchField]) {
+    init(endpoint: String, searchableFields: [SearchField], defaultSort: SortOptions? = nil, defaultSortDirection: SortDirection? = nil) {
         
         self.urlComponents = URLComponents(string: baseUrl)!
         self.searchableFields = searchableFields
         self.urlComponents.path = endpoint
         self.currentSearch = ""
         self.queryFields = []
+        self.sortBy = defaultSort ?? SortOptions.Date
+        self.sortDirection = defaultSortDirection ?? SortDirection.Descending
         
         //Initialize search query for each parameter to be an empty string
         //By default we are searching all fields
         for field in searchableFields {
             queryFields.append(URLQueryItem(name: field.databaseName, value: self.currentSearch))
         }
+        
+        //Add sort ordering
+        queryFields.append(URLQueryItem(name: "sort_by", value: self.sortBy.rawValue))
+        queryFields.append(URLQueryItem(name: "sort_direction", value: self.sortDirection.rawValue))
+        
+        //Set urlComponents values
         self.urlComponents.queryItems = self.queryFields
 
+        //Decoder for timestamps
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
         
@@ -70,6 +95,18 @@ extension SearchAPIRequest where Result : Decodable {
         self.urlComponents.queryItems = self.queryFields
     }
     
+    func setSortByField(field: SortOptions){
+        self.removeSearchField(field: "sort_by")
+        self.queryFields.append(URLQueryItem(name: "sort_by", value: field.rawValue))
+        self.urlComponents.queryItems = self.queryFields
+    }
+    
+    func setSortDirection(direction: SortDirection){
+        self.removeSearchField(field: "sort_direction")
+        self.queryFields.append(URLQueryItem(name: "sort_direction", value: direction.rawValue))
+        self.urlComponents.queryItems = self.queryFields
+    }
+    
     ///Updates the state of the object for to perfrom a new query.
     func updateSearch(newQuery: String) {
         
@@ -82,7 +119,13 @@ extension SearchAPIRequest where Result : Decodable {
             
             //Update each query item
             for index in 0..<self.queryFields.count {
-                self.queryFields[index].value = newQuery
+                let query = self.queryFields[index]
+                
+                //Avoid updating sort parameters
+                if query.name != "sort_by" && query.name != "sort_direction" {
+                    self.queryFields[index].value = newQuery
+                }
+                
             }
             
             //Update URLComponents

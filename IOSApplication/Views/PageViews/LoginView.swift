@@ -12,9 +12,10 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @EnvironmentObject private var psUserData : psUserClass
-    @EnvironmentObject private var psCommunityData : psCommunityClass
-    @EnvironmentObject private var CommonVM : GeneralVM
+    //Passing is faster than Environment Objects
+    var AppState : AppStateClass
+    var AuthVM : AuthorizationClass
+    var CommonVM : GeneralVM
     
     @State private var usernameOrEmail = ""
     @State private var password = ""
@@ -22,58 +23,57 @@ struct LoginView: View {
     @State private var isForgotPasswordSheetPresented = false
     @State private var loginState = APIResponseCode.NotSent
     
-    @ObservedObject var AuthVM : AuthorizationVM
+    
     
     
     var body: some View {
         
-        if(!AuthVM.isAuthorized) {
-                VStack(alignment: .leading) {
+    
+            VStack(alignment: .leading) {
 
-                    rcHeadline("RareConnect\nLogin")
+                rcHeadline("RareConnect\nLogin")
 
-                    Spacer()
+                Spacer()
+                
+                rcTextInput(prompt: "Username or Email", bindTo: $usernameOrEmail)
+                
+                Spacer()
+                
+                // Password TextField
+                rcSecureField(prompt: "Password", bindTo: $password)
+                
+                Spacer()
+                // Login Button
+                rcButtonSecondary(text: "Login", fillWidth: true) {
                     
-                    rcTextInput(prompt: "Username or Email", bindTo: $usernameOrEmail)
-                    
-                    Spacer()
-                    
-                    // Password TextField
-                    rcSecureField(prompt: "Password", bindTo: $password)
-                    
-                    Spacer()
-                    // Login Button
-                    rcButtonSecondary(text: "Login", fillWidth: true) {
+                    // Validate inputs before attempting login
+                    if isValidInput() {
                         
-                        // Validate inputs before attempting login
-                        if isValidInput() {
-                            
-                            //Loading state
-                            loginState = APIResponseCode.Waiting
-                            
-                            //API Call
-                            AuthVM.AuthorizeUser(username: usernameOrEmail, password: password) 
-                            { validUsername in
-                                AuthVM.SetupApplicationState(username: validUsername, CommonVM: CommonVM, psUserData: psUserData, psCommunityData: psCommunityData)
+                        //Loading state
+                        loginState = APIResponseCode.Waiting
+                        
+                        //API Call
+                        AuthVM.AuthorizeUser(username: usernameOrEmail, password: password, resultBinding: $loginState)
+                        { authorizedUsername in
+                            AppState.SetupApplicationState(username: authorizedUsername){
+                                AuthVM.ManualAuthorizationValidated()
                             }
                         }
                     }
+                }
+                HStack{
                     HStack{
                         HStack{
-                            HStack{
-                                rcSubText("Don't have a profile?").lineLimit(1)
-                                rcNavigationText(dest: CreateUserView(psUserData: psUserData, psCommunityData: psCommunityData, CommonVM: CommonVM, AuthVM: AuthVM), text: "Sign Up")
-                            }
-                            
-                            Spacer()
-                            
-                            HttpStatusView(statusCode: loginState)
+                            rcSubText("Don't have a profile?").lineLimit(1)
+                            rcNavigationText(dest: CreateUserView(AppState: AppState, AuthVM: AuthVM, CommonVM: CommonVM), text: "Sign Up")
                         }
-                    }               
-                }.padding()
-            } else {
-                PostLoginViewDecider(CommonVM: CommonVM, psUserData: psUserData, psCommunityData: psCommunityData)
-            }
+                        
+                        Spacer()
+                        
+                        HttpStatusView(statusCode: loginState)
+                    }
+                }
+            }.padding()
 }
     
     // Function to validate inputs

@@ -36,7 +36,6 @@ struct rcListView<V : View, T : Hashable>: View {
             LazyVStack(alignment: .leading, spacing: 15.0){
                 ForEach(data, id: \.self) { item in
                     ListItem { ImplementedListItem(item) }
-                        
                 }
             }.padding()
         }

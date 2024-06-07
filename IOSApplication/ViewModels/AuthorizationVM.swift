@@ -10,51 +10,56 @@ import RxSwift
 import RxCocoa
 import SwiftUI
 
-class AuthorizationVM: ViewModel {
+class AuthorizationClass: ObservableObject {
     
-    var community_id: Int = 0
-    var profile_id: Int = 0
     @Published var isAuthorized: Bool = false
     @Published var autoAuthorizationComplete: Bool = false
+    @Published var showLogin: Bool = false;
+    
     private var dispatcher = ViewModelAPIDispatcher()
     
     static let userDefaultKey : String = "RareConnectUsernameKey"
-    
-    init() {
-    }
-    
-    func Refresh() {
-        return
-    }
-    
-    
-    //NEED TO BREAK CONVENTION FOR AUTHORIZATION DUE TO:
-    //Populating enviroment objects requires the View to be instantiatied, therefore needs to be exectued in the OnAppear function
-    func OnViewOpen() {
-        return
-    }
-    
-    func OnViewOpen(CommonVM: GeneralVM, psUserData: psUserClass, psCommunityData: psCommunityClass) {
 
-        if let userCredentials = AuthorizationVM.CheckForUserCredentials() {
-            dispatcher.SendRequestViewUpdate(.authorizeUser(username: userCredentials.0, password: userCredentials.1)) { authorized in
-                if IsSuccessful(authorized) {
-                    self.SetupApplicationState(username: userCredentials.0, CommonVM: CommonVM, psUserData: psUserData, psCommunityData: psCommunityData)
+    func OnViewOpen(onSuccess: @escaping (String) -> Void) {
+
+        //Check to see if we have already logged in the user automatically
+        //This won't be true if the user has logged out
+        if (!autoAuthorizationComplete){
+            
+            //Get cached credendtials
+            if let userCredentials = AuthorizationClass.CheckForUserCredentials() {
+                
+                //Authorize cached user
+                dispatcher.SendRequestViewUpdate(.authorizeUser(username: userCredentials.0, password: userCredentials.1)) { authorized in
+                    
+                    //If we are successful, update the user state, outside of here, otherwise,
+                    //have them login
+                    if IsSuccessful(authorized) {
+                        onSuccess(userCredentials.0)
+                    } else {
+                        self.showLogin = true
+                    }
                 }
             }
         }
-        self.autoAuthorizationComplete = true
+        autoAuthorizationComplete = true
     }
     
     ///Authorize User Enpoint
     ///Escaping closure provided to pass in enviroment objects to be set by the view. (The enviroment objects should be separately, after authorization has happened)
-    func AuthorizeUser(username: String, password: String, onSuccess: @escaping (String) -> Void ) -> Void{
+    func AuthorizeUser(username: String, password: String, resultBinding: Binding<APIResponseCode>, onSuccess: @escaping (String) -> Void) -> Void{
         
         dispatcher.SendRequestViewUpdate(.authorizeUser(username: username, password: password)) { authorized in
-            if IsSuccessful(authorized) {
-                AuthorizationVM.UpdateCachedCredentials(username: username, password: password)
+            switch authorized{
+            case .success( let success):
+                resultBinding.wrappedValue = success.data
+                AuthorizationClass.UpdateCachedCredentials(username: username, password: password)
                 onSuccess(username)
+                return
+            case .failure( let failure ):
+                resultBinding.wrappedValue = APIResponseCode.Error(failure)
             }
+
         }
     }
     
@@ -62,7 +67,7 @@ class AuthorizationVM: ViewModel {
     func CreateUser(newUser: UserProfileCreation, onSuccess: @escaping (String) -> Void ) -> Void{
         dispatcher.SendRequestViewUpdate(.createProfile(newUser: newUser)){ result in
             if IsSuccessful(result) {
-                AuthorizationVM.UpdateCachedCredentials(username: newUser.username, password: newUser.password)
+                AuthorizationClass.UpdateCachedCredentials(username: newUser.username, password: newUser.password)
                 onSuccess(newUser.username)
             }
         }
@@ -70,11 +75,11 @@ class AuthorizationVM: ViewModel {
     }
     
     static func getUserDefault() -> String? {
-        return UserDefaults.standard.string(forKey: AuthorizationVM.userDefaultKey)
+        return UserDefaults.standard.string(forKey: AuthorizationClass.userDefaultKey)
     }
     
     static func setUserDefault(username: String) -> Void{
-        UserDefaults.standard.set(username, forKey: AuthorizationVM.userDefaultKey)
+        UserDefaults.standard.set(username, forKey: AuthorizationClass.userDefaultKey)
     }
     
     static func saveCredentials(username: String, password: String) {
@@ -188,28 +193,21 @@ class AuthorizationVM: ViewModel {
         }
     }
     
-    func SetupApplicationState(username: String, CommonVM: GeneralVM, psUserData: psUserClass, psCommunityData: psCommunityClass) -> Void {
-        //Get information from username
-        CommonVM.GetUserByUsername(username: username){ userProfile in
-            psUserData.SetProfile(profile: userProfile)
-            
-            //Get Communities for profile
-            CommonVM.GetCommunitiesForProfile(profile_id: psUserData.id) { profileCommunities in
-                psUserData.profileCommunities = profileCommunities
-                
-                //Set the community if we are automatically logging them a commmunity.
-                if profileCommunities.count == 1 
-                { 
-                    psCommunityData.SetCommunity(community: profileCommunities[0])
-                }
-                
-                //Update View State
-                DispatchQueue.main.async {
-                    self.isAuthorized = true
-                }
-                
-            }
+    func AutoAuthorizeValidated(){
+        DispatchQueue.main.async{
+            self.isAuthorized = true
         }
-        
+    }
+    
+    func ManualAuthorizationValidated(){
+        DispatchQueue.main.async{
+            self.isAuthorized = true
+            self.showLogin = false
+        }
+    }
+    
+    func Logout(){
+        self.isAuthorized = false
+        self.showLogin = true
     }
 }

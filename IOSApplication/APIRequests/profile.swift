@@ -61,24 +61,39 @@ extension APIRequest where Result == APIResponseCode {
     ///Creates a usable APIRequest to create a user in the backend
     /// - Parameters:
     ///     - newUser: An object that holds the necessary data to create a profile
-    /// - Returns: APIRequest<[CommunityRequest]>
+    /// - Returns: APIResponseCode
     static func createProfile(newUser: UserProfileCreation) -> APIRequest {
         
         //Format the data to be passed to through JSON
         let body: [String: Any] = [
             "id" : newUser.id,
-            "firstname": newUser.firstname,
-            "lastname": newUser.lastname,
+            "first_name": newUser.first_name,
+            "last_name": newUser.last_name,
             "username": newUser.username,
             "gender": newUser.gender.rawValue,
             "email": newUser.email,
-            "age": newUser.age,
+            "dob": newUser.dob,
             "password": newUser.password,
-            "residingcity": newUser.residingCity
+            "residing_city": newUser.residing_city
         ]
         
         ///Create the API Request
         return APIRequest(endpoint: "/profile/create", body: body, method: RestMethod.POST) ?? APIRequest(errorCode: APIResponseCode.Error(.UnableToCreateHttpRequest))
+    }
+    
+    ///Creates a usable APIRequest to create a user in the backend
+    /// - Parameters:
+    ///     - profile_id: The profile_id that you want to logout
+    /// - Returns: APIResponseCode
+    static func logout(profile_id: Int) -> APIRequest {
+        
+        //Format the data to be passed to through JSON
+        let body: [String: Any] = [
+            "profile_id" : profile_id
+        ]
+        
+        ///Create the API Request
+        return APIRequest(endpoint: "/profile/logout", body: body, method: RestMethod.POST) ?? APIRequest(errorCode: APIResponseCode.Error(.UnableToCreateHttpRequest))
     }
     
 }

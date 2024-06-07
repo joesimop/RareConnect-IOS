@@ -9,17 +9,17 @@ import SwiftUI
 
 struct PostLoginViewDecider: View {
 
+    var AppState : AppStateClass
     var CommonVM : GeneralVM
-    var psUserData : psUserClass
-    var psCommunityData : psCommunityClass
+    
     
     var body : some View{
         
-        switch psUserData.profileCommunities.count {
+        switch AppState.user.profileCommunities.count {
             
         //If profile is not apart of any communities
         case 0:
-            CommunityRequestsView(CommonVM: CommonVM, psUserData: psUserData)
+            CommunityRequestsView(CommonVM: CommonVM, psUserData: AppState.user)
                 .transition(.opacity)
                 .animation(.easeInOut(duration: 100.0),
                            value: true)
@@ -28,14 +28,8 @@ struct PostLoginViewDecider: View {
             
         //If they are only associated with one community, go straight there.
         case 1:
-            SidebarView(psCommunityData: psCommunityData, user: psUserData)
-            //SidebarView(psCommunityData: psCommunityData, user: psUserData) {
-//                HomeView(community_id: psUserData.profileCommunities[0].id)
-//                    .transition(.opacity)
-//                    .animation(.easeInOut(duration: 100.0),
-//                               value: true)
-//                    .navigationTitle(psUserData.profileCommunities[0].name)
-            //}
+            SidebarView(psCommunityData: AppState.community, user: AppState.user)
+
             
         //Allow Selectin the community
         default:

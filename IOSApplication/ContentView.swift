@@ -14,43 +14,37 @@ import RxCocoa
 struct ContentView: View {
     
     @EnvironmentObject private var psCommonData : psCommonDataClass
-    @EnvironmentObject private var psUserData : psUserClass
-    @EnvironmentObject private var psCommunityData : psCommunityClass
     @EnvironmentObject private var CommonVM : GeneralVM
+    @EnvironmentObject private var AuthVM : AuthorizationClass
+    @EnvironmentObject private var AppState : AppStateClass
     
     @State private var loginStatus : APIResponseCode = APIResponseCode.NotSent
     @State private var doneDisplayingLogo : Bool = false
-    @State private var sidebarOpen : Bool = false
-    @StateObject var AuthVM: AuthorizationVM
-
-    init() {
-        self._AuthVM = StateObject(wrappedValue: AuthorizationVM())
-    }
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                if AuthVM.autoAuthorizationComplete && doneDisplayingLogo {
-                    if AuthVM.isAuthorized {
-                        PostLoginViewDecider(CommonVM: CommonVM, psUserData: psUserData, psCommunityData: psCommunityData)
-                    } else {
-                        LoginView(AuthVM: AuthVM)
-                            .transition(.opacity)
-                            .animation(.easeInOut(duration: 1.0),
-                                       value: AuthVM.autoAuthorizationComplete)
-                    }
-                } else {
-                    LogoView()
-                        .onAppear{
-                            StartLogoViewTimer()
-                            self.AuthVM.OnViewOpen(CommonVM: CommonVM, psUserData: psUserData, psCommunityData: psCommunityData)
-                            SetupPersistentStorage()
-                            
-                        }
-                    HttpStatusView(statusCode: loginStatus).padding()
+        
+        VStack{
+            if doneDisplayingLogo && AuthVM.isAuthorized {
+                NavigationStack {
+                    PostLoginViewDecider(AppState: AppState, CommonVM: CommonVM)
                 }
+            } else {
+                LogoView()
+                    .onAppear{
+                        StartLogoViewTimer()
+                        AuthVM.OnViewOpen(){ authorizedUsername in
+                            AppState.SetupApplicationState(username: authorizedUsername){
+                                AuthVM.AutoAuthorizeValidated()
+                            }
+                        }
+                        SetupPersistentStorage()
+                    }
             }
-        }.background(Color.background)
+        }.fullScreenCover(isPresented: $AuthVM.showLogin){
+            NavigationStack{
+                LoginView(AppState: AppState, AuthVM: AuthVM, CommonVM: CommonVM)
+            }
+        }
     }
     
     func SetupPersistentStorage() {

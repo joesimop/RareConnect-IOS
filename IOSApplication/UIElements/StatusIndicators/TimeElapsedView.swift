@@ -34,6 +34,6 @@ struct TimeElapsedView: View {
                 
     
     var body: some View {
-        Text(prependText + self.dateString + suffixText).font(.caption)
+        rcText(prependText + self.dateString + suffixText).font(.caption)
     }
 }

@@ -16,13 +16,7 @@ struct rcHeadline: View {
     
     
     var body: some View {
-        
-        Spacer()
-        
         Text(text)
-            .font(.system(size: 36))
-            .fontWeight(.bold)
-        
-        Spacer()
+            .font(.system(size: 36).weight(.bold))
     }
 }

@@ -10,8 +10,8 @@ import Foundation
 //Data for an abbreviated profile
 struct AbbrProfile: Decodable, Hashable {
     let id: Int
-    let firstname: String
-    let lastname: String
+    let first_name: String
+    let last_name: String
     let username: String
     let role: eRole
 }

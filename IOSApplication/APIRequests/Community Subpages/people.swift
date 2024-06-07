@@ -21,7 +21,8 @@ extension SearchAPIRequest where Result == [AbbrProfile] {
                                     SearchField(databaseName: "firstname",   displayName: "First Name"),
                                     SearchField(databaseName: "lastname",    displayName: "Last Name"),
                                     SearchField(databaseName: "username",    displayName: "Username")
-                                ])
+                                ],
+                                defaultSort: SortOptions.Firstname)
     }
     
 }

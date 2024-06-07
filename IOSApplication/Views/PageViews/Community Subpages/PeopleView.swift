@@ -26,7 +26,7 @@ struct PeopleView: View {
                 HStack{
                     VStack(alignment: .leading){
                         HStack{
-                            rcText(person.firstname + " " + person.lastname)
+                            rcText(person.first_name + " " + person.last_name)
                             rcSubText(person.username)
                         }
                         rcText(person.role.rawValue.capitalized, color: IsAdmin(person.role) ? .success : .textPrimary)

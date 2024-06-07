@@ -25,6 +25,8 @@
 		B2254B1F2AF70D8500A21DA3 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2254B1E2AF70D8500A21DA3 /* APICaller.swift */; };
 		B2254B222AF70DC600A21DA3 /* APIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2254B212AF70DC600A21DA3 /* APIBase.swift */; };
 		B226F1CD2B938EB3001ED498 /* APIDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226F1CC2B938EB3001ED498 /* APIDispatcher.swift */; };
+		B23169932BD452DA000569F5 /* AppStateClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23169922BD452DA000569F5 /* AppStateClass.swift */; };
+		B23169952BD6D32F000569F5 /* logs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23169942BD6D32F000569F5 /* logs.swift */; };
 		B23885CA2B1E5116004ADCBF /* APIResponseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23885C92B1E5116004ADCBF /* APIResponseCode.swift */; };
 		B23885D12B1ECBCE004ADCBF /* HttpStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23885D02B1ECBCE004ADCBF /* HttpStatusView.swift */; };
 		B23885D52B223E82004ADCBF /* APIUtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23885D42B223E82004ADCBF /* APIUtilityFunctions.swift */; };
@@ -68,6 +70,8 @@
 		B270E1252B8FA43F00AE9A14 /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270E1242B8FA43F00AE9A14 /* SearchVM.swift */; };
 		B270E1272B8FA87700AE9A14 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270E1262B8FA87700AE9A14 /* PeopleView.swift */; };
 		B270E1292B8FA93900AE9A14 /* rcDatabaseSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270E1282B8FA93900AE9A14 /* rcDatabaseSearch.swift */; };
+		B281602E2BC07D98003143C5 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B281602D2BC07D98003143C5 /* ButtonStyles.swift */; };
+		B28160302BC096DE003143C5 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = B281602F2BC096DE003143C5 /* General.swift */; };
 		B28D14202B4F750000C8E387 /* BooleanDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D141F2B4F750000C8E387 /* BooleanDebug.swift */; };
 		B28D14222B51B83900C8E387 /* ViewModelUtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D14212B51B83900C8E387 /* ViewModelUtilityFunctions.swift */; };
 		B28D14242B51C99100C8E387 /* APIResponseDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28D14232B51C99100C8E387 /* APIResponseDisplay.swift */; };
@@ -129,6 +133,11 @@
 		B2ECFDBE2BA7F1D200F33207 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ECFDBD2BA7F1D200F33207 /* ArticleView.swift */; };
 		B2ECFDC02BA8946200F33207 /* CreateArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ECFDBF2BA8946200F33207 /* CreateArticleView.swift */; };
 		B2ECFDC22BAB5FCB00F33207 /* SearchParameterSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ECFDC12BAB5FCB00F33207 /* SearchParameterSelectView.swift */; };
+		B2FD53922BFC4B5A00C34CAA /* admin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FD53912BFC4B5A00C34CAA /* admin.swift */; };
+		B2FD53942BFC4B9000C34CAA /* Admin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FD53932BFC4B9000C34CAA /* Admin.swift */; };
+		B2FD53962BFC4EED00C34CAA /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FD53952BFC4EED00C34CAA /* AdminView.swift */; };
+		B2FD539A2BFC516F00C34CAA /* AdminVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FD53992BFC516F00C34CAA /* AdminVM.swift */; };
+		B2FD539D2BFC5AB000C34CAA /* FlaggedPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FD539C2BFC5AB000C34CAA /* FlaggedPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +184,8 @@
 		B2254B1E2AF70D8500A21DA3 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		B2254B212AF70DC600A21DA3 /* APIBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBase.swift; sourceTree = "<group>"; };
 		B226F1CC2B938EB3001ED498 /* APIDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDispatcher.swift; sourceTree = "<group>"; };
+		B23169922BD452DA000569F5 /* AppStateClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateClass.swift; sourceTree = "<group>"; };
+		B23169942BD6D32F000569F5 /* logs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logs.swift; sourceTree = "<group>"; };
 		B23885C92B1E5116004ADCBF /* APIResponseCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseCode.swift; sourceTree = "<group>"; };
 		B23885D02B1ECBCE004ADCBF /* HttpStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpStatusView.swift; sourceTree = "<group>"; };
 		B23885D42B223E82004ADCBF /* APIUtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUtilityFunctions.swift; sourceTree = "<group>"; };
@@ -217,6 +228,8 @@
 		B270E1242B8FA43F00AE9A14 /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
 		B270E1262B8FA87700AE9A14 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		B270E1282B8FA93900AE9A14 /* rcDatabaseSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rcDatabaseSearch.swift; sourceTree = "<group>"; };
+		B281602D2BC07D98003143C5 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		B281602F2BC096DE003143C5 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		B28D141F2B4F750000C8E387 /* BooleanDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanDebug.swift; sourceTree = "<group>"; };
 		B28D14212B51B83900C8E387 /* ViewModelUtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelUtilityFunctions.swift; sourceTree = "<group>"; };
 		B28D14232B51C99100C8E387 /* APIResponseDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseDisplay.swift; sourceTree = "<group>"; };
@@ -277,6 +290,11 @@
 		B2ECFDBD2BA7F1D200F33207 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		B2ECFDBF2BA8946200F33207 /* CreateArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateArticleView.swift; sourceTree = "<group>"; };
 		B2ECFDC12BAB5FCB00F33207 /* SearchParameterSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParameterSelectView.swift; sourceTree = "<group>"; };
+		B2FD53912BFC4B5A00C34CAA /* admin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = admin.swift; sourceTree = "<group>"; };
+		B2FD53932BFC4B9000C34CAA /* Admin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admin.swift; sourceTree = "<group>"; };
+		B2FD53952BFC4EED00C34CAA /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		B2FD53992BFC516F00C34CAA /* AdminVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVM.swift; sourceTree = "<group>"; };
+		B2FD539C2BFC5AB000C34CAA /* FlaggedPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlaggedPost.swift; sourceTree = "<group>"; };
 		B75A533A152223873802699A /* Pods-IOSApplication-IOSApplicationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSApplication-IOSApplicationUITests.debug.xcconfig"; path = "Target Support Files/Pods-IOSApplication-IOSApplicationUITests/Pods-IOSApplication-IOSApplicationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -345,12 +363,12 @@
 		B2254AE12AF6FD6A00A21DA3 = {
 			isa = PBXGroup;
 			children = (
+				2F8EE896A3C5DE6E777319FD /* Frameworks */,
 				B2254AEC2AF6FD6A00A21DA3 /* IOSApplication */,
 				B2254AFF2AF6FD6B00A21DA3 /* IOSApplicationTests */,
 				B2254B092AF6FD6B00A21DA3 /* IOSApplicationUITests */,
-				B2254AEB2AF6FD6A00A21DA3 /* Products */,
 				6DD683E57192E7FC357AE75B /* Pods */,
-				2F8EE896A3C5DE6E777319FD /* Frameworks */,
+				B2254AEB2AF6FD6A00A21DA3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -410,9 +428,9 @@
 		B2254B192AF708D800A21DA3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B23885E32B2A2FBD004ADCBF /* PageViews */,
 				B23885D32B223E3F004ADCBF /* DebugWidgets */,
 				B23885D22B223D41004ADCBF /* GeneralViews */,
+				B23885E32B2A2FBD004ADCBF /* PageViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -420,13 +438,15 @@
 		B2254B1A2AF708EA00A21DA3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B2CA3F822B6EC47A006E88CA /* CommunitySubpages */,
-				B23885D82B2786B7004ADCBF /* ViewModel.swift */,
+				B2FD53992BFC516F00C34CAA /* AdminVM.swift */,
+				B226F1CC2B938EB3001ED498 /* APIDispatcher.swift */,
+				B23169922BD452DA000569F5 /* AppStateClass.swift */,
 				B23885EC2B2A3825004ADCBF /* AuthorizationVM.swift */,
-				B28D14212B51B83900C8E387 /* ViewModelUtilityFunctions.swift */,
 				B28D14382B5A42CF00C8E387 /* GeneralVM.swift */,
 				B270E1242B8FA43F00AE9A14 /* SearchVM.swift */,
-				B226F1CC2B938EB3001ED498 /* APIDispatcher.swift */,
+				B23885D82B2786B7004ADCBF /* ViewModel.swift */,
+				B28D14212B51B83900C8E387 /* ViewModelUtilityFunctions.swift */,
+				B2CA3F822B6EC47A006E88CA /* CommunitySubpages */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -464,9 +484,9 @@
 		B23885D32B223E3F004ADCBF /* DebugWidgets */ = {
 			isa = PBXGroup;
 			children = (
-				B23885D02B1ECBCE004ADCBF /* HttpStatusView.swift */,
-				B28D141F2B4F750000C8E387 /* BooleanDebug.swift */,
 				B28D14232B51C99100C8E387 /* APIResponseDisplay.swift */,
+				B28D141F2B4F750000C8E387 /* BooleanDebug.swift */,
+				B23885D02B1ECBCE004ADCBF /* HttpStatusView.swift */,
 			);
 			path = DebugWidgets;
 			sourceTree = "<group>";
@@ -483,24 +503,25 @@
 		B23885E32B2A2FBD004ADCBF /* PageViews */ = {
 			isa = PBXGroup;
 			children = (
-				B29182E32B922F5B00843098 /* ProfileView.swift */,
+				B2FD53952BFC4EED00C34CAA /* AdminView.swift */,
+				B200849E2B5EECEE0040BC60 /* ApplyForCommunityView.swift */,
 				B2ECFDBD2BA7F1D200F33207 /* ArticleView.swift */,
-				B2CA3F7F2B6EBBD8006E88CA /* Community Subpages */,
-				B23885E42B2A2FD5004ADCBF /* LoginView.swift */,
-				B23885E62B2A32CD004ADCBF /* ForgotPasswordView.swift */,
+				B24176A32B9F8CFD00060ECB /* CommunityBoardSearchView.swift */,
+				B2E841212B605EB30047CDC5 /* CommunityRequestsView.swift */,
+				B2E8411F2B605E4E0047CDC5 /* CommunitySelectView.swift */,
+				B2ECFDBF2BA8946200F33207 /* CreateArticleView.swift */,
+				B2C00E042B89068A002A336F /* CreateNewPostView.swift */,
 				B23885E82B2A32D8004ADCBF /* CreateUserView.swift */,
+				B25C61962B7550CE006BA793 /* EditableView.swift */,
+				B23885E62B2A32CD004ADCBF /* ForgotPasswordView.swift */,
 				B23885EA2B2A3568004ADCBF /* HomeView.swift */,
-				B28D14362B584A1800C8E387 /* LogoView.swift */,
 				B20084952B5EE9610040BC60 /* JoinCommunityOrApplyView.swift */,
 				B200849C2B5EECD20040BC60 /* JoinCommunityView.swift */,
-				B200849E2B5EECEE0040BC60 /* ApplyForCommunityView.swift */,
-				B2E8411F2B605E4E0047CDC5 /* CommunitySelectView.swift */,
-				B2E841212B605EB30047CDC5 /* CommunityRequestsView.swift */,
+				B23885E42B2A2FD5004ADCBF /* LoginView.swift */,
+				B28D14362B584A1800C8E387 /* LogoView.swift */,
 				B2A27B6D2B64463A00EBF902 /* PostLoginViewDecider.swift */,
-				B25C61962B7550CE006BA793 /* EditableView.swift */,
-				B2C00E042B89068A002A336F /* CreateNewPostView.swift */,
-				B24176A32B9F8CFD00060ECB /* CommunityBoardSearchView.swift */,
-				B2ECFDBF2BA8946200F33207 /* CreateArticleView.swift */,
+				B29182E32B922F5B00843098 /* ProfileView.swift */,
+				B2CA3F7F2B6EBBD8006E88CA /* Community Subpages */,
 			);
 			path = PageViews;
 			sourceTree = "<group>";
@@ -523,6 +544,15 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		B281602C2BC07D80003143C5 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				B281602D2BC07D98003143C5 /* ButtonStyles.swift */,
+				B281602F2BC096DE003143C5 /* General.swift */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
 		B28D14252B53016800C8E387 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,6 +560,7 @@
 				B28D14262B53017500C8E387 /* UserProfile.swift */,
 				B262468E2B5F24B000A54A6D /* ApplicationState.swift */,
 				B26246902B5F250800A54A6D /* Communities.swift */,
+				B2FD53932BFC4B9000C34CAA /* Admin.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -537,6 +568,8 @@
 		B28D14282B530D5F00C8E387 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				B2FD539B2BFC5A4700C34CAA /* Admin */,
+				B281602C2BC07D80003143C5 /* Styling */,
 				B24176A52BA0C41100060ECB /* Images */,
 				B2A27B732B6749BC00EBF902 /* Text */,
 				B2E841332B6228B80047CDC5 /* GeneralViews */,
@@ -574,6 +607,8 @@
 				B28D143B2B5AECEF00C8E387 /* profile.swift */,
 				B28D143D2B5AECF900C8E387 /* auth.swift */,
 				B26246922B5F27B000A54A6D /* communities.swift */,
+				B23169942BD6D32F000569F5 /* logs.swift */,
+				B2FD53912BFC4B5A00C34CAA /* admin.swift */,
 			);
 			path = APIRequests;
 			sourceTree = "<group>";
@@ -633,11 +668,11 @@
 		B2CA3F822B6EC47A006E88CA /* CommunitySubpages */ = {
 			isa = PBXGroup;
 			children = (
-				B2CA3F832B6EC48F006E88CA /* GuidelinesVM.swift */,
-				B2DE62472B9CEF6F0099FAB3 /* FaqVM.swift */,
-				B25C61A02B7ACB21006BA793 /* DonationVM.swift */,
 				B2C2CFF52B852A890043A1D6 /* CommunityBoardVM.swift */,
 				B2ECFDBB2BA7BC1400F33207 /* CommunityUpdatesVM.swift */,
+				B25C61A02B7ACB21006BA793 /* DonationVM.swift */,
+				B2DE62472B9CEF6F0099FAB3 /* FaqVM.swift */,
+				B2CA3F832B6EC48F006E88CA /* GuidelinesVM.swift */,
 			);
 			path = CommunitySubpages;
 			sourceTree = "<group>";
@@ -683,6 +718,14 @@
 				B2DE624D2B9CF3380099FAB3 /* rcDropdown.swift */,
 			);
 			path = GeneralViews;
+			sourceTree = "<group>";
+		};
+		B2FD539B2BFC5A4700C34CAA /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				B2FD539C2BFC5AB000C34CAA /* FlaggedPost.swift */,
+			);
+			path = Admin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -966,7 +1009,9 @@
 				B2C00DFF2B87C521002A336F /* Constants.swift in Sources */,
 				B28D14202B4F750000C8E387 /* BooleanDebug.swift in Sources */,
 				B23885D92B2786B7004ADCBF /* ViewModel.swift in Sources */,
+				B2FD539D2BFC5AB000C34CAA /* FlaggedPost.swift in Sources */,
 				B28D142A2B530DB800C8E387 /* rcTextInput.swift in Sources */,
+				B28160302BC096DE003143C5 /* General.swift in Sources */,
 				B270E1272B8FA87700AE9A14 /* PeopleView.swift in Sources */,
 				B25C61952B7547DE006BA793 /* HelperFunctions.swift in Sources */,
 				B26246912B5F250800A54A6D /* Communities.swift in Sources */,
@@ -980,6 +1025,7 @@
 				B28D14272B53017500C8E387 /* UserProfile.swift in Sources */,
 				B26246892B5EF43800A54A6D /* rcNavigationButton.swift in Sources */,
 				B29EE0822BA60B9A000839F4 /* CommunityUpdatesView.swift in Sources */,
+				B2FD53962BFC4EED00C34CAA /* AdminView.swift in Sources */,
 				B2E841222B605EB30047CDC5 /* CommunityRequestsView.swift in Sources */,
 				B23A8AEB2B7E8C8A00817686 /* rcComment.swift in Sources */,
 				B20084962B5EE9610040BC60 /* JoinCommunityOrApplyView.swift in Sources */,
@@ -996,6 +1042,7 @@
 				B28D143C2B5AECEF00C8E387 /* profile.swift in Sources */,
 				B2BE26342B7FD77600E3E2D6 /* rcIcon.swift in Sources */,
 				B28D14392B5A42CF00C8E387 /* GeneralVM.swift in Sources */,
+				B23169952BD6D32F000569F5 /* logs.swift in Sources */,
 				B23885E52B2A2FD5004ADCBF /* LoginView.swift in Sources */,
 				B2BD92E82B90F10900A50448 /* SearchAPIRequest.swift in Sources */,
 				B23A8AED2B7E95C600817686 /* rcPinPost.swift in Sources */,
@@ -1016,6 +1063,7 @@
 				B25C61A12B7ACB21006BA793 /* DonationVM.swift in Sources */,
 				B23885DF2B279887004ADCBF /* TableView.swift in Sources */,
 				B23A8AE32B7E831E00817686 /* CommunityBoard.swift in Sources */,
+				B2FD53942BFC4B9000C34CAA /* Admin.swift in Sources */,
 				B28D142C2B530ED800C8E387 /* rcConditionalTextInput.swift in Sources */,
 				B2E841202B605E4E0047CDC5 /* CommunitySelectView.swift in Sources */,
 				B270E1252B8FA43F00AE9A14 /* SearchVM.swift in Sources */,
@@ -1027,11 +1075,15 @@
 				B226F1CD2B938EB3001ED498 /* APIDispatcher.swift in Sources */,
 				B270E1292B8FA93900AE9A14 /* rcDatabaseSearch.swift in Sources */,
 				B26246932B5F27B000A54A6D /* communities.swift in Sources */,
+				B2FD539A2BFC516F00C34CAA /* AdminVM.swift in Sources */,
+				B2FD53922BFC4B5A00C34CAA /* admin.swift in Sources */,
 				B2C00E032B890567002A336F /* rcPinnedPost.swift in Sources */,
 				B25C619B2B7AC7C2006BA793 /* donation.swift in Sources */,
 				B25C61972B7550CE006BA793 /* EditableView.swift in Sources */,
 				B2DE624C2B9CF0FB0099FAB3 /* FAQView.swift in Sources */,
+				B281602E2BC07D98003143C5 /* ButtonStyles.swift in Sources */,
 				B28D142E2B53138000C8E387 /* rcNumberInput.swift in Sources */,
+				B23169932BD452DA000569F5 /* AppStateClass.swift in Sources */,
 				B25C619D2B7AC7F3006BA793 /* Donation.swift in Sources */,
 				B24176A42B9F8CFD00060ECB /* CommunityBoardSearchView.swift in Sources */,
 				B2A27B722B66F9CB00EBF902 /* rcSlideView.swift in Sources */,

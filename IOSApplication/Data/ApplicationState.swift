@@ -30,6 +30,12 @@ class psCommunityClass : ObservableObject {
     func AsAbbrCommunity() -> AbbrCommunity {
         return AbbrCommunity(id: self.id, name: self.name, role: self.role)
     }
+    
+    func Reset(){
+        self.id = 0
+        self.name = ""
+        self.role = eRole.NoCredentials
+    }
 }
 
 ///Data that persists about the user throughout the session of the app
@@ -45,8 +51,21 @@ class psUserClass : ObservableObject {
     ///Sets the profile of the persistent data, given a UserProfile
     func SetProfile(profile : UserProfile){
         self.id = profile.id
-        self.firstname = profile.firstname
-        self.lastname = profile.lastname
+        self.firstname = profile.first_name
+        self.lastname = profile.last_name
         self.username = profile.username
     }
+    
+    func Reset(){
+        self.id = 0
+        self.firstname = ""
+        self.lastname = ""
+        self.username = ""
+        self.profileCommunities = []
+    }
+}
+
+struct NavigationPath : Identifiable, Hashable{
+    let id = UUID()
+    let name : String
 }

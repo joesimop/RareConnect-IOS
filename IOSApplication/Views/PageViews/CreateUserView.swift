@@ -24,8 +24,8 @@ struct OutlinedTextFieldStyle: TextFieldStyle {
 struct CreateUserView: View {
     
     //Passing in as variables, better than using @EnviromentObject
-    var psUserData : psUserClass
-    var psCommunityData : psCommunityClass
+    var AppState : AppStateClass
+    var AuthVM : AuthorizationClass
     var CommonVM : GeneralVM
     
     @State private var firstName = ""
@@ -42,7 +42,7 @@ struct CreateUserView: View {
     @State private var hasSubmittedNewUser : Bool = false;
     @State private var createdUserState  = APIResponseCode.NotSent
     
-    @ObservedObject var AuthVM : AuthorizationVM
+
 
     var body: some View {
         
@@ -92,14 +92,14 @@ struct CreateUserView: View {
                             let newUser =
                             UserProfileCreation(
                                 id: 0,              ///Value is not used, just to keep JSON format consistent.
-                                firstname: firstName,
-                                lastname: lastName,
+                                first_name: firstName,
+                                last_name: lastName,
                                 username: username,
                                 password: passwordConfirmation,
                                 email: email,
-                                age: "10",
+                                dob: Date().formatted(.iso8601),
                                 gender: selectedGender,
-                                residingCity: residingCity
+                                residing_city: residingCity
                             )
                             hasSubmittedNewUser = true
                             
@@ -108,7 +108,9 @@ struct CreateUserView: View {
                             
                             //Submit create user and store in user defaults if successful
                             AuthVM.CreateUser(newUser: newUser){ validUsername in
-                                AuthVM.SetupApplicationState(username: validUsername, CommonVM: CommonVM, psUserData: psUserData, psCommunityData: psCommunityData)
+                                AppState.SetupApplicationState(username: validUsername){
+                                    AuthVM.ManualAuthorizationValidated()
+                                }
                             }
                         }
                     }

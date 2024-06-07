@@ -54,6 +54,14 @@ class ViewBindAPIDispatcher {
     
     private var bag = DisposeBag()
     
+    //Generally used for response codes
+    func SendRequest<T1>(_ r1: APIRequest<T1>, resultHandler: @escaping (APIResult<T1>) -> Void) {
+        DispatchRequest(ConcurrentAPIRequest(request: r1))
+            .subscribe(onNext: { result in
+                resultHandler(result)
+            }).disposed(by: bag)
+    }
+    
     func SendRequest<T1>(_ r1: RequestBinder<T1>){
         DispatchRequest(ConcurrentAPIRequest(request: r1.0))
             .subscribe(onNext: { result in

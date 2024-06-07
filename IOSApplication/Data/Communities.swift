@@ -9,17 +9,17 @@ import Foundation
 
 ///The method in which a community is joined by a user
 enum JoinMethod : String, CaseIterable, Decodable {
-    case Public = "public"
-    case Private = "private"
-    case Paywall = "paywall"
+    case Public = "PUBLIC"
+    case Private = "PRIVATE"
+    case Paywall = "PAYWALL"
     
 }
 
 ///The status of a user's request to join a community.
 enum eRequestStatus : String, CaseIterable, Decodable {
-    case Pending = "pending"
-    case Accepted = "accepted"
-    case Rejected = "rejected"
+    case Pending = "PENDING"
+    case Accepted = "ACCEPTED"
+    case Rejected = "REJECTED"
 }
 
 ///Data necessary to represent a community
@@ -62,3 +62,5 @@ struct CommunityApplicationBody : Codable {
     let message : String
     
 }
+
+

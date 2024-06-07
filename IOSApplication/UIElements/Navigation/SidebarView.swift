@@ -8,19 +8,7 @@
 import SwiftUI
 
 
-extension View {
-    func animate(duration: CGFloat, _ execute: @escaping () -> Void) async {
-        await withCheckedContinuation { continuation in
-            withAnimation(.linear(duration: duration)) {
-                execute()
-            }
 
-            DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
-                continuation.resume()
-            }
-        }
-    }
-}
 
 ///Contains information necessary to compose a sidebar item, including which page to open on click
 struct SidebarItem: Identifiable {
@@ -48,15 +36,19 @@ struct SidebarItems {
         //All items that are located in the sidebar
         self.items = [
             SidebarItem(name: "Home", image: "Home", view: HomeView(community_id: community.id)),
-            SidebarItem(name: "About", image: "Home", view: HomeView(community_id: community.id)),
+            //SidebarItem(name: "About", image: "Home", view: HomeView(community_id: community.id)),
             SidebarItem(name: "Guidelines", image: "", view: CommunityGuidelinesView(community: community, profile_id: user.id)),
             SidebarItem(name: "Community Updates", image: "", view: CommunityUpdatesView(user: user, psCommunityData: community)),
-            SidebarItem(name: "Events", image: "", view: HomeView(community: community)),
+            //SidebarItem(name: "Events", image: "", view: HomeView(community: community)),
             SidebarItem(name: "People", image: "", view: PeopleView(community: community)),
             SidebarItem(name: "Donation", image: "", view: DonationView(community_id: community.id, profile_id: user.id, role: community.role)),
             SidebarItem(name: "Community Board", image: "", view: CommunityBoardView(user: user, psCommunityData: community)),
             SidebarItem(name: "FAQ", image: "", view: FAQView(community: community, profile_id: user.id))
         ]
+        
+        if IsAdmin(community.role){
+            self.items.append(SidebarItem(name: "Admin", image: "", view: AdminView(community_id: community.id, profile_id: user.id)))
+        }
     }
 }
 
@@ -122,6 +114,13 @@ struct SidebarView: View {
                     sidebarOpen.toggle()
                 }
             }
+            Spacer()
+            
+            SidebarItemView(item: SidebarItem(name: "Profile", image: "person.circle.fill", view: ProfileView(community_id: community.id, profile_id: user.id, isSelf: true))) { 
+                selectedItem in
+                    selectedView = selectedItem
+                    sidebarOpen.toggle()
+            }
         }
     }
     
@@ -153,6 +152,7 @@ struct SidebarView: View {
                         }
                     }
                 } else {
+                    // Never has this code block been entered!!
                     rcText("Could not bind views. Please relaunch app.")
                 }
                

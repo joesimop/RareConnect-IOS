@@ -115,9 +115,30 @@ extension APIRequest where Result: Decodable {
 //MARK: Void Response
 //When we don't need the response...
 extension APIRequest where Result == Void {
+    
     init(urlRequest: URLRequest) {
         self.urlRequest = urlRequest
         self.handleResponse = { _ in }
+    }
+    
+    //POST Request with body
+    init?(endpoint: String, body: [String : Any], method: RestMethod) {
+        
+        //Initialize Basic Url Components
+        self.urlRequest = SetupUrlRequest(baseUrl, endpoint: endpoint)
+        
+        do {
+            try SerializeBody(request: &urlRequest, body: body)
+        } catch {
+            return nil
+        }
+        SetHttpMethod(request: &self.urlRequest, method: method)
+        self.handleResponse = { _ in }
+    }
+    
+    init(errorCode: APIResponseCode){
+        self.handleResponse = {_ in }
+        self.urlRequest = SetupUrlRequest("", endpoint: "")
     }
 }
 
