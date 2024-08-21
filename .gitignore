@@ -88,3 +88,9 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+IOSApplicationTests/
+IOSApplicationUITests/
+IOSApplication.xcodeproj/
+IOSApplication.xcworkspace/
+
